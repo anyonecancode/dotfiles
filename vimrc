@@ -1,5 +1,4 @@
  set nocompatible               " be iMproved
- filetype on                   " required!
  filetype off                   " required!
 
  set rtp+=~/.vim/bundle/vundle/
@@ -29,8 +28,8 @@
  Bundle 'vim-less'
  Bundle 'pangloss/vim-javascript'
 
- filetype plugin on     " required!
- " syntax on
+ filetype plugin indent on     " required!
+ syntax enable
  
  """""""""""""""""""""""""""""
  "Source initialization files
