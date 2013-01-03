@@ -1,3 +1,4 @@
+
  set nocompatible               " be iMproved
  filetype off                   " required!
 
@@ -10,10 +11,12 @@
 
  " Look and feel
  Bundle 'altercation/vim-colors-solarized'
+ Bundle 'Lokaltog/vim-powerline'
  
  " Git integrations
  Bundle 'tpope/vim-fugitive'
  Bundle 'Lokaltog/vim-powerline'
+ Bundle 'ervandew/supertab'
 
  " Navigation
  Bundle 'scrooloose/nerdtree'
@@ -36,7 +39,7 @@
  "Source initialization files
  """""""""""""""""""""""""""""
  
-  runtime! bundle/vundle/init/**.vim
+  runtime! init/**.vim
  
  "
  " Brief help
