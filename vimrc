@@ -27,6 +27,7 @@
  Bundle 'Markdown'
  Bundle 'vim-less'
  Bundle 'pangloss/vim-javascript'
+ Bundle 'Puppet-Syntax-Highlighting'
 
  filetype plugin indent on     " required!
  syntax enable
