@@ -1,5 +1,6 @@
 
  set nocompatible               " be iMproved
+ filetype on                   " turn it on before off to avoid git message issues
  filetype off                   " required!
 
  set rtp+=~/.vim/bundle/vundle/
