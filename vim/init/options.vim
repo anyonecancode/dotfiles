@@ -4,8 +4,6 @@ set backspace=indent,eol,start     " Let backspace work over anything.
 set hidden                         " Allow hidden, unsaved buffers
 set history=1024
 set laststatus=2                   " Always show statusline
-set mouse=a                        " Use mouse support in XTerm/iTerm.
-set nocompatible                   " be iMproved
 set notimeout                      " No command timeout
 set number                         " Line numbers
 set scrolloff=3                    " Scroll when the cursor is 3 lines from edge
@@ -22,13 +20,15 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+" Wrap the text at 100 columns
+set textwidth=100
+
 " Disable arrow keys
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-
-
+"
 " Tab behavior
 set shiftwidth=2                   " Width of autoindent
 set expandtab                      " Use soft tabs
@@ -45,9 +45,9 @@ set incsearch                      " Incremental search
 set hlsearch                       " search with highlights by default
 set ignorecase
 set smartcase
+
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
-
 
 " Saving
 set swapfile                               " Keep swapfiles
@@ -56,7 +56,6 @@ set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 " Write all writeable buffers when changing buffers or losing focus.
 set autowriteall                           " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
-
 
 " Visible characters
 set list                                   " Show whitespace
