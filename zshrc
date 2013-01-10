@@ -32,5 +32,5 @@ ZSH_THEME="davidxia"
 plugins=(git autojump vagrant)
 
 source $ZSH/oh-my-zsh.sh
-
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 # Customize to your needs...
