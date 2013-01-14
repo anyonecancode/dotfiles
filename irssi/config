@@ -264,8 +264,8 @@ statusbar = {
 settings = {
   core = {
     real_name = "Philip Schweiger";
-    user_name = "pschwei1";
-    nick = "pschwei1";
+    user_name = "schweiger";
+    nick = "schweiger";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
