@@ -47,7 +47,7 @@ set ignorecase
 set smartcase
 
 " Press Space to turn off highlighting and clear any message already displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"" :set nospell
 
 " Saving
 set swapfile                               " Keep swapfiles
@@ -95,3 +95,6 @@ endif
 
 " Detect asciidoc files
 autocmd BufRead,BufNewFile *.asciidoc setfiletype asciidoc
+
+" Keybinding for spell check
+map <S-s> :setlocal spell spelllang=en_us
