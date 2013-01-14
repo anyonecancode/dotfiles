@@ -32,6 +32,7 @@
  Bundle 'vim-less'
  Bundle 'pangloss/vim-javascript'
  Bundle 'Puppet-Syntax-Highlighting'
+ Bundle 'bitc/vim-bad-whitespace'
 
  filetype plugin indent on     " required!
  syntax enable
