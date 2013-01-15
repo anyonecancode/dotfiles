@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format=FORMAT)
 HOME = expanduser('~')
 DIR = 'dotfiles'
 BACKUPDIR = 'dotfiles_old'
-files = ['vimrc', 'vim', 'zshrc', 'oh-my-zsh', 'irssi']
+files = ['vimrc', 'vim', 'zshrc', 'oh-my-zsh', 'irssi', 'tmux.conf']
 
 def main():
     parser = argparse.ArgumentParser(description=DESC)
@@ -32,7 +32,6 @@ def main():
       filePath = HOME + '/.' + f
       if not exists(filePath):
         filesToLink[f] = filePath
-        print 'doesnt exist'
       else:
         if not islink(filePath):
           filesToLink[f] = filePath
