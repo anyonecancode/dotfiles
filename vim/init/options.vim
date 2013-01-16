@@ -1,3 +1,6 @@
+" encoding
+set encoding=utf8
+
 " Look and feel
 set background=dark
 set backspace=indent,eol,start     " Let backspace work over anything.
