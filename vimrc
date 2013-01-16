@@ -41,13 +41,13 @@
 
  filetype plugin indent on     " required!
  syntax enable
- 
+
  """""""""""""""""""""""""""""
  "Source initialization files
  """""""""""""""""""""""""""""
- 
+
   runtime! init/**.vim
- 
+
  "
  " Brief help
  " :BundleList          - list configured bundles
