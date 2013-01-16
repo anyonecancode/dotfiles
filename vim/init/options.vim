@@ -32,14 +32,11 @@ nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 "
-" Tab behavior
+" Tab/indentation behavior
 set shiftwidth=2                   " Width of autoindent
 set expandtab                      " Use soft tabs
 set tabstop=2                      " Tab settings
 set smarttab                       " Use shiftwidth to tab at line beginning
-
-
-" Indentation
 set autoindent
 
 
