@@ -66,13 +66,6 @@ else
 endif
 
 
-" Window navigation
-nmap <C-H> <C-W>h
-nmap <C-J> <C-W>j
-nmap <C-K> <C-W>k
-nmap <C-L> <C-W>l
-
-
 set wildignore+=tags               " Ignore tags when globbing.
 set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
