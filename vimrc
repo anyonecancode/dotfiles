@@ -7,13 +7,14 @@
  call vundle#rc()
 
  " let Vundle manage Vundle
- " required! 
+ " required!
  Bundle 'gmarik/vundle'
 
  " Look and feel
  Bundle 'altercation/vim-colors-solarized'
  Bundle 'Lokaltog/vim-powerline'
- 
+ Bundle 'surround.vim'
+
  " Git integrations
  Bundle 'tpope/vim-fugitive'
  Bundle 'Lokaltog/vim-powerline'
@@ -22,6 +23,10 @@
  " Navigation
  Bundle 'scrooloose/nerdtree'
  Bundle 'kien/ctrlp.vim'
+ Bundle 'mileszs/ack.vim'
+
+ " Autocompletions
+ Bundle 'ervandew/supertab'
 
  " Code editing and highlighting
  Bundle 'scrooloose/nerdcommenter'
