@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format=FORMAT)
 HOME = expanduser('~')
 DIR = 'dotfiles'
 BACKUPDIR = 'dotfiles_old'
-files = ['vimrc', 'vim', 'zshrc', 'oh-my-zsh', 'irssi', 'tmux.conf']
+files = ['vimrc', 'vim', 'zshrc', 'oh-my-zsh', 'irssi', 'tmux.conf', 'lynx.cfg']
 
 def main():
     parser = argparse.ArgumentParser(description=DESC)
