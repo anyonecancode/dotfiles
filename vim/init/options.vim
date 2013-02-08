@@ -19,8 +19,6 @@ set wildmode=list:longest          " Bash-like tab completion
 " Show 100 column limit as colored line
 if exists('+colorcolumn')
   set colorcolumn=100
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
 " Wrap the text at 100 columns
