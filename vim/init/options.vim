@@ -88,3 +88,6 @@ endif
 
 " Detect asciidoc files
 autocmd BufRead,BufNewFile *.asciidoc setfiletype asciidoc
+
+" Strip trailing whitespace on save
+autocmd FileType ruby,c,cpp,java,php,html autocmd BufWritePre <buffer> :%s/\s\+$//e
