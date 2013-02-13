@@ -34,3 +34,9 @@ plugins=(git autojump vagrant)
 source $ZSH/oh-my-zsh.sh
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 # Customize to your needs...
+
+## aliases
+alias zshconfig="vim ~/.zshrc"
+
+# This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
