@@ -38,6 +38,7 @@
  Bundle 'pangloss/vim-javascript'
  Bundle 'Puppet-Syntax-Highlighting'
  Bundle 'bitc/vim-bad-whitespace'
+ Bundle 'tmhedberg/SimpylFold'
 " Bundle 'sleistner/vim-jshint'
 
  filetype plugin indent on     " required!
