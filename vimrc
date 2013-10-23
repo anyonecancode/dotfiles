@@ -32,7 +32,7 @@
  Bundle 'scrooloose/nerdcommenter'
  Bundle 'scrooloose/syntastic'
  Bundle 'beyondwords/vim-twig'
- Bundle 'vim-scripts/ZenCoding.vim'
+ Bundle 'vim-scripts/Emmet.vim'
  Bundle 'Markdown'
  Bundle 'vim-less'
  Bundle 'pangloss/vim-javascript'
