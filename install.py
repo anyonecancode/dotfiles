@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-import argparse
-import logging
 from os import mkdir
 from os import rename
 from os import symlink
@@ -12,7 +10,6 @@ VERSION = '0.1.0'
 DESC = 'Creates symlinks from the home directory to the dotfiles repo. TODO: ZSH stuff'
 
 FORMAT = '%(asctime)s %(levelname)s %(message)s'
-logging.basicConfig(level=logging.INFO, format=FORMAT)
 
 HOME = expanduser('~')
 DIR = 'dotfiles'
@@ -20,9 +17,6 @@ BACKUPDIR = 'dotfiles_old'
 files = ['vimrc', 'vim', 'zshrc', 'oh-my-zsh', 'irssi', 'tmux.conf', 'lynx.cfg', 'ackrc']
 
 def main():
-    parser = argparse.ArgumentParser(description=DESC)
-    args = parser.parse_args()
-
     makeBackupDir()
 
     filesToBackup = {}
