@@ -29,7 +29,7 @@ ZSH_THEME="davidxia"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump vagrant)
+plugins=(git autojump vagrant npm)
 
 source $ZSH/oh-my-zsh.sh
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
