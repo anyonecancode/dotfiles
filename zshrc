@@ -41,5 +41,12 @@ alias zshconfig="vim ~/.zshrc"
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+HOSTNAME=%(hostname)]
+
+if [ $HOSTNAME=='Philips-MacBook-Air.local' ]; then
+  ### Added by the Heroku Toolbelt
+  export PATH="/usr/local/heroku/bin:$PATH"
+  ### Use GDAL
+
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+fi
