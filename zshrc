@@ -32,7 +32,6 @@ ZSH_THEME="davidxia"
 plugins=(git autojump vagrant npm)
 
 source $ZSH/oh-my-zsh.sh
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 # Customize to your needs...
 
 ## aliases
@@ -41,12 +40,14 @@ alias zshconfig="vim ~/.zshrc"
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-HOSTNAME=%(hostname)]
+HOSTNAME=`hostname`
 
-if [ $HOSTNAME=='Philips-MacBook-Air.local' ]; then
+if [[ $HOSTNAME == 'Philips-MacBook-Air.local' ]]; then
+
+  [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
   ### Added by the Heroku Toolbelt
   export PATH="/usr/local/heroku/bin:$PATH"
-  ### Use GDAL
 
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 fi
