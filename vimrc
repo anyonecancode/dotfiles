@@ -12,13 +12,12 @@
 
  " Look and feel
  Bundle 'altercation/vim-colors-solarized'
- Bundle 'Lokaltog/vim-powerline'
+ Bundle 'Lokaltog/powerline'
  Bundle 'surround.vim'
 
  " Git integrations
  Bundle 'tpope/vim-fugitive'
  Bundle 'Lokaltog/vim-powerline'
- Bundle 'ervandew/supertab'
 
  " Navigation
  Bundle 'scrooloose/nerdtree'
