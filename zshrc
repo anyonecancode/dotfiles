@@ -51,3 +51,4 @@ if [[ $HOSTNAME == 'Philips-MacBook-Air.local' ]]; then
 
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 fi
+export PATH="/usr/local/sbin:$PATH"
