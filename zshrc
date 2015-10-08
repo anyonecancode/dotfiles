@@ -42,7 +42,7 @@ alias zshconfig="vim ~/.zshrc"
 
 HOSTNAME=`hostname`
 
-if [[ $HOSTNAME == 'Philips-MacBook-Air.local' ]]; then
+if [[ $HOSTNAME == 'Philips-MacBook'* ]]; then
 
   [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
