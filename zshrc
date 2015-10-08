@@ -50,5 +50,12 @@ if [[ $HOSTNAME == 'Philips-MacBook-Air.local' ]]; then
   export PATH="/usr/local/heroku/bin:$PATH"
 
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+  # The next line updates PATH for the Google Cloud SDK.
+  source '/Users/schweiger/google-cloud-sdk/path.zsh.inc'
+
+  # The next line enables shell command completion for gcloud.
+  source '/Users/schweiger/google-cloud-sdk/completion.zsh.inc'
 fi
+
 export PATH="/usr/local/sbin:$PATH"
