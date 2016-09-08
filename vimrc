@@ -40,6 +40,7 @@
  Bundle 'tmhedberg/SimpylFold'
 " Bundle 'sleistner/vim-jshint'
  Bundle "nvie/vim-flake8"
+ Bundle "derekwyatt/vim-scala"
 
  filetype plugin indent on     " required!
  syntax enable
